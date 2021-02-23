@@ -21,10 +21,10 @@ const styles = {
 const SearchResult = props => {
     return (
         <Container>
-            <h3>Search Results</h3>
+            <h3>BOOX WE FOUND FOR YOU!!</h3>
             {props.books.map(book => {
                 return (
-                    <div style={styles.card} className="card mb-5">
+                    <div style={styles.card} className="card mb-2">
                         <div className="card-body">
                             <Row className="SearchResult row"
                                 id={book.title + "Card"}
