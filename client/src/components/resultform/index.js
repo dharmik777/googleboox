@@ -34,7 +34,7 @@ const SearchResult = props => {
                                         src={book.image}
                                         alt={book.title} />
                                 </Col>
-                                <Col size="10" className="pl-2">
+                                <Col size="20" className="pl-2">
                                     <h3 className="bookTitle">{book.title}</h3>
                                     <h4 className="bookAuthor">{book.authors}</h4>
                                     <p className="bookDescription pr-3">{book.description}</p>
