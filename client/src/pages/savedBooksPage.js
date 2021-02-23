@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import SavedResult from "../components/SavedResult/index"
+import SavedResult from "../components/results/index"
 
 class SaveBook extends Component {
     state = {
