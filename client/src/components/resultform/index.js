@@ -11,10 +11,10 @@ const styles = {
     },
     card: {
         borderStyle: "solid",
-        borderWidth: "20px",
+        borderWidth: "1px",
         borderColor: "purple",
         marginBottom: "330rem",
-        backgroundColor: "yellow"
+        backgroundColor: "white"
     }
 }
 
