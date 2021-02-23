@@ -3,12 +3,12 @@ import { Container, Row, Col } from "../Grid/index";
 
 const styles = {
     delete: {
-        backgroundColor: "purple",
-        color: "yellow"
+        backgroundColor: "red",
+        color: "black"
     },
     view: {
         backgroundColor: "red",
-        color: "white"
+        color: "black"
     },
     card: {
         borderStyle: "solid",
