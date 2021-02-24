@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Jumbotron from "../components/jumbotron/index";
 import API from "../utils/API";
 import { Container, Row, Col } from "../components/Grid/index";
 import SearchForm from "../components/searchbar/index";
@@ -54,6 +55,8 @@ class SearchBooks extends Component {
   render() {
     return (
       <Container fluid>
+        <Jumbotron>
+          </Jumbotron>
         <Container>
           <Row>
             <Col size="12">

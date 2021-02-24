@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "../Grid/index";
 
+
 const styles = {
     save: {
         backgroundColor: "purple",
@@ -13,7 +14,7 @@ const styles = {
         borderStyle: "solid",
         borderWidth: "1px",
         borderColor: "purple",
-        marginBottom: "330rem",
+        marginBottom: "10rem",
         backgroundColor: "white"
     }
 }
