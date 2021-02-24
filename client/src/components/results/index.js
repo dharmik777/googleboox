@@ -22,7 +22,7 @@ const styles = {
 const SavedResult = props => {
     return (
         <Container>
-            <h3>Saved Books</h3>
+            <h3>BOOX</h3>
             {props.savedBooks.map(savedbook => {
                 return (
                     <div>
