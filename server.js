@@ -19,7 +19,7 @@ app.use(routes)
 
 //Connet to mongoose
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks',
+  process.env.MONGODB_URI || 'mongodb+srv://boox:12345@cluster0.q43nn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -34,11 +34,11 @@ app.listen(PORT, () => {
 });
 
 
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://boox:12345@cluster0.q43nn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://boox:12345@cluster0.q43nn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
