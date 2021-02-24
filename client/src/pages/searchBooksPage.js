@@ -56,6 +56,9 @@ class SearchBooks extends Component {
     return (
       <Container fluid>
         <Jumbotron>
+          Do You Love BOOX?!?
+          Search For Your Favorite Titles Here
+          Then Save Them For Later!
           </Jumbotron>
         <Container>
           <Row>
