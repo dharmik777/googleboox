@@ -2,8 +2,9 @@ const express = require("express");
 const mongoose = require ("mongoose");
 const routes= require ("./routes")
 
-const PORT = process.env.PORT || 3001;
 const app = express();
+const PORT = process.env.PORT || 3001;
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -17,9 +18,13 @@ if (process.env.NODE_ENV === "production") {
 // Define API routes here
 app.use(routes)
 
+// const MONGODB_URI = 'mongodb+srv://dharmik:Monkey1@thisonewillwork.698vd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+
+// 'mongodb://localhost/googlebooks'
 //Connet to mongoose
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks',
+  process.env.MONGODB_URI || 'mongodb+srv://dharmik:Monkey1@thisonewillwork.698vd.mongodb.net/googleman',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -27,6 +32,10 @@ mongoose.connect(
     useFindAndModify: false
   }
 );
+
+mongoose.connection.on('connected', ()=> {
+  console.log('Mongoose is connected!!!')
+});
 
 
 app.listen(PORT, () => {
