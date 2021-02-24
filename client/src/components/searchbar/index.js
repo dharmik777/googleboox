@@ -3,7 +3,7 @@ import React from "react";
 const styles = {
     submitbtn: {
         backgroundColor: "purple",
-        marginBottom: "30%",
+        marginBottom: "10px",
         color: "yellow"
     }
 }

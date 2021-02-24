@@ -14,7 +14,7 @@ const styles = {
         borderStyle: "solid",
         borderWidth: "1px",
         borderColor: "purple",
-        marginBottom: "330rem",
+        marginBottom: "10rem",
         backgroundColor: "white"
     }
 }
